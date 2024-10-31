@@ -1,0 +1,26 @@
+@use '../variables' as vars;
+
+.nav {
+  background-color: vars.$primary-color;
+  position: fixed;
+  display: flex; 
+  flex-direction: row;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.nav__content {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.nav__item_list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav__item {
+  padding-left: 5rem;
+}

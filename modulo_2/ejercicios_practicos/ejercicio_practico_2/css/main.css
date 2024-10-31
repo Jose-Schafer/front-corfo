@@ -1,0 +1,50 @@
+body {
+  padding-top: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+p {
+  padding-left: 2rem;
+  font-size: 4rem;
+  background-color: blue;
+}
+@media (min-width: 576px) {
+  p {
+    font-size: 1rem;
+    background-color: red;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 3rem;
+    background-color: green;
+  }
+}
+
+.nav {
+  background-color: #3498db;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.nav__content {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.nav__item_list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav__item {
+  padding-left: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
