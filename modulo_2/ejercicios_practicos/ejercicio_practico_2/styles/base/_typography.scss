@@ -1,17 +1,13 @@
 @use "./mixins";
 
-p {
-  padding-left: 2rem;
-  font-size: 4rem;
-  background-color: blue;
-
-  @include mixins.sm {
-    font-size: 1rem;
-    background-color: red;
-  }
+html {
+  font-size: 50px;
 
   @include mixins.md {
-    font-size: 3rem;
-    background-color: green;
+    font-size: 50px;
+  }
+
+  @include mixins.lg {
+    font-size: 20px;
   }
 }

@@ -1,26 +1,80 @@
 @use '../variables' as vars;
+@use "../base/mixins";
 
 .nav {
   background-color: vars.$primary-color;
+  display: flex;
+  align-items: center;
   position: fixed;
-  display: flex; 
-  flex-direction: row;
   width: 100vw;
+  height: 6rem;
   top: 0;
   left: 0;
 }
 
 .nav__content {
-  padding-top: auto;
-  padding-bottom: auto;
+  // Center vertically
+  display: flex;
+  align-items: center;
+
+  // Make nav items position under the .nav__persistent
+  flex-direction: column;
+
+  // Manage width
+  width: 100%;
+
+  // Set margin
+  margin: 0 2rem;
+
+  @include mixins.lg {
+    flex-direction: row;
+  }
+}
+
+.nav__persistent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  @include mixins.lg {
+    justify-content: left;
+  }
+
+}
+
+.nav__menu {
+  display: none;
+
+  @include mixins.lg {
+    display: block;
+  }
 }
 
 .nav__item_list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style-type: none;
+
+  @include mixins.lg {
+    flex-direction: row;
+  }
+
 }
 
 .nav__item {
   padding-left: 5rem;
+}
+
+
+.nav__toggle:checked ~ .nav__menu {
+  display: flex; 
+  flex-direction: column;
+}
+
+.nav__toggle {
+  @include mixins.lg {
+    display: none;
+  }
 }
