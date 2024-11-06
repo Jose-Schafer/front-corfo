@@ -1,0 +1,25 @@
+@use "../base/mixins";
+
+.service__container {
+  display: flex;
+  flex-direction: column;
+
+  @include mixins.lg {
+    flex-direction: row;
+  }
+}
+
+.testimony__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & > .card {
+    width: 90%;
+    align-self: center;
+
+    @include mixins.lg {
+      width: 60%;
+    }
+  }
+}
