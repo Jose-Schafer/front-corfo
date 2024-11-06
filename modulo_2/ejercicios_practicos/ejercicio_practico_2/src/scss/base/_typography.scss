@@ -1,0 +1,9 @@
+@use "./mixins";
+
+html {
+  font-size: 40px;
+
+  @include mixins.lg {
+    font-size: 20px;
+  }
+}

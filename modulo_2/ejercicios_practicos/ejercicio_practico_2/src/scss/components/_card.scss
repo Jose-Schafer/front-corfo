@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../base/mixins";
+
+.card {
+  background-color: $card-color;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 0.3rem;
+
+  &__horizontal--responsive {
+    width: 100%;
+
+    @include mixins.lg{
+      width: 33%;
+    }
+
+  }
+
+  &__title {
+    color: blue;
+    font-size: 0.75rem;
+    margin: 0.5rem 0.5rem;
+    font-weight: bold;
+
+    @include mixins.lg {
+      font-size: 1.5rem;
+      margin: 1rem 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    color: #333;
+
+    @include mixins.lg {
+      font-size: 1rem;
+      margin: 1rem 1rem;
+    }
+  }
+
+  &__img--top {
+    width: 100%;
+    height: auto;
+  }
+}

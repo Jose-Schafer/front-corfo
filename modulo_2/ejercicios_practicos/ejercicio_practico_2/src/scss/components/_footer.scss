@@ -1,0 +1,30 @@
+@use "../base/mixins";
+
+.footer {
+  background-color: #101214;
+  color: white;
+
+  display: block;
+
+  width: 100%;
+  padding: 1rem 2rem;
+
+  & > p {
+    width: 80%;
+    font-size: 0.7rem;
+
+    @include mixins.lg {
+      font-size: 1rem;
+    }
+  }
+
+  &__social > a > img {
+    width: 3rem;
+  }
+
+  &__social > a {
+    padding: 0.5rem;
+  }
+}
+
+
