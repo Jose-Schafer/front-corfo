@@ -1,0 +1,10 @@
+@use "../base/mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include mixins.lg {
+    flex-direction: row;
+  }
+}

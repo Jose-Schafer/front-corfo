@@ -1,7 +1,7 @@
 @use "abstracts/variables" as *;
 
 // Import all of Bootstrap's CSS
-@use "bootstrap/scss/bootstrap";
+// @use "bootstrap/scss/bootstrap";
 
 // Import internal SCSS
 @use "base/body";
@@ -9,4 +9,5 @@
 @use "base/typography";
 @use "layout/navbar";
 @use "components/card";
+@use "layout/container";
 
