@@ -5,14 +5,8 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 
-  @include mixins.md {
-    padding-top: 5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-
   @include mixins.lg {
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-right: 4rem;
     padding-left: 4rem;
   }

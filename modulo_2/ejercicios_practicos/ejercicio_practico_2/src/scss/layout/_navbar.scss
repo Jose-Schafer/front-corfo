@@ -33,6 +33,10 @@
   &__menu_item_list {
     list-style-type: none;
 
+    & > li {
+      border-bottom: 1px solid #cccccc;
+    }
+
     @include mixins.lg {
       display: flex;
       flex-direction: row;
@@ -40,6 +44,7 @@
 
       & > li {
         padding: 0 2rem;
+        border-bottom: none;
       }
     }
   }
@@ -51,7 +56,7 @@
   }
 
   &__toggle:checked ~ .nav__menu {
-    display: block; 
+    display: flex; 
   }
 
   &__icon {
