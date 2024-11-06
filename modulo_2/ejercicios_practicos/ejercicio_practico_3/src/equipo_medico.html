@@ -6,26 +6,31 @@
         <link rel="icon" href="static/favicon.ico" type="image/x-icon">
     <body>
 
-        <nav class="nav">
-            <div class="nav__content">
-                <a class="nav__icon" href="index.html">
-                    <img width="70rem" src="https://img.icons8.com/ios-filled/50/nurse-female.png" alt="nurse-female"/>
-                </a>
-                <input class="nav__toggle" type="checkbox"/>
-                <div class="nav__menu">
-                    <ul class="nav__menu_item_list">
-                        <li>
-                            <a class="nav__menu_item" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav__menu_item" href="equipo_medico.html">Equipo Médico</a>
-                        </li>
-                        <li>
-                            <a class="nav__menu_item" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+
+            <a class="nav__icon" href="index.html">
+                <img width="70rem" src="https://img.icons8.com/ios-filled/50/nurse-female.png" alt="nurse-female"/>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-link">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-link" href="equipo_medico.html">Equipo Médico</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
 
         <div class="page__content">
@@ -36,42 +41,44 @@
             </section>
 
             <h1>Médicos</h1>
-            <section class="service__container">
-                <div class="card card__horizontal--responsive">
-                    <img src="static/doctor_1.png" class="card__img--top" alt="Dr. Juan">
-                    <div>
-                        <h5 class="card__title">Dr. Juan</h5>
-                        <p class="card__description">Especialista en Traumatología.</p>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="card col-8 col-lg m-lg-2 mx-auto">
+                        <img src="static/doctor_1.png" class="card-img-top" alt="Dr. Juan">
+                        <div>
+                            <h5 class="card-title">Dr. Juan</h5>
+                            <p class="card-description">Especialista en Traumatología.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card card__horizontal--responsive">
-                    <img src="static/doctor_2.png" class="card__img--top" alt="Dr. Pedro">
-                    <div>
-                        <h5 class="card__title">Dr. Pedro</h5>
-                        <p class="card__description">Especialista en Otorrinolaringología.</p>
+                    <div class="card col-8 col-lg m-lg-2 mx-auto">
+                        <img src="static/doctor_2.png" class="card-img-top" alt="Dr. Pedro">
+                        <div>
+                            <h5 class="card-title">Dr. Pedro</h5>
+                            <p class="card-description">Especialista en Otorrinolaringología.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card card__horizontal--responsive">
-                    <img src="static/doctor_3.png" class="card__img--top" alt="Dr. José">
-                    <div>
-                        <h5 class="card__title">Dr. José</h5>
-                        <p class="card__description">Especialista en Kinesiología.</p>
+                    <div class="card col-8 col-lg m-lg-2 mx-auto">
+                        <img src="static/doctor_3.png" class="card-img-top" alt="Dr. José">
+                        <div>
+                            <h5 class="card-title">Dr. José</h5>
+                            <p class="card-description">Especialista en Kinesiología.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card card__horizontal--responsive">
-                    <img src="static/doctor_4.png" class="card__img--top" alt="Dr. Eduardo">
-                    <div>
-                        <h5 class="card__title">Dr. Eduardo</h5>
-                        <p class="card__description">Especialista en Gediatría.</p>
+                    <div class="card col-8 col-lg m-lg-2 mx-auto">
+                        <img src="static/doctor_4.png" class="card-img-top" alt="Dr. Eduardo">
+                        <div>
+                            <h5 class="card-title">Dr. Eduardo</h5>
+                            <p class="card-description">Especialista en Gediatría.</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
-        <footer class="footer">
+        <footer class="container-fluid bg-light p-5">
             <h1>Footer</h1>
             <h3>Contacto y Redes Sociales</h3>
             <p>
@@ -89,16 +96,16 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
-            <h3>Síguenos en nuestras redes sociales</h3>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/hospital" title="Facebook" target="_blank">
-                    <img src="static/facebook-icon.png" alt="Facebook">
+            <h3 class="mb-2">Síguenos en nuestras redes sociales</h3>
+            <div class="row w-100 mb-4 p-4">
+                <a href="https://www.facebook.com/hospital" title="Facebook" target="_blank" class="col col-lg-1">
+                    <img src="static/facebook-icon.png" alt="Facebook" class="w-100">
                 </a>
-                <a href="https://www.twitter.com/hospital" title="Twitter" target="_blank">
-                    <img src="static/twitter-icon.png" alt="Twitter">
+                <a href="https://www.twitter.com/hospital" title="Twitter" target="_blank" class="col col-lg-1">
+                    <img src="static/twitter-icon.png" alt="Twitter" class="w-100">
                 </a>
-                <a href="https://www.instagram.com/hospital" title="Instagram" target="_blank">
-                    <img src="static/instagram-icon.png" alt="Instagram">
+                <a href="https://www.instagram.com/hospital" title="Instagram" target="_blank" class="col col-lg-1">
+                    <img src="static/instagram-icon.png" alt="Instagram" class="w-100">
                 </a>
             </div>
         </footer>
