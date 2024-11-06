@@ -1,0 +1,45 @@
+@use "../base/mixins";
+@use "../abstracts/variables" as *;
+
+.nav {
+  background-color: $primary-color;
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  top: 0;
+  left: 0;
+
+  &__content {
+    margin: 0 2rem;
+  }
+
+  &__header {
+
+  }
+
+  &__menu {
+    display: none;
+
+    @include mixins.lg {
+      display: flex;
+    }
+
+  }
+
+  &__menu_item_list {
+  }
+
+  &__menu_item {
+  }
+
+  &__toggle:checked ~ .nav__menu {
+    display: block; 
+  }
+
+  &__toggle {
+    @include mixins.lg {
+      display: none;
+    }
+  }
+}
+

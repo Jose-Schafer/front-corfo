@@ -1,0 +1,11 @@
+@use "abstracts/variables" as *;
+
+// Import all of Bootstrap's CSS
+@use "bootstrap/scss/bootstrap";
+
+// Import internal SCSS
+@use "base/body";
+@use "base/mixins";
+@use "base/typography";
+@use "layout/navbar";
+
