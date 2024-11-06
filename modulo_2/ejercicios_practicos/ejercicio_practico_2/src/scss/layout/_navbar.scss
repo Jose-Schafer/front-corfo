@@ -5,13 +5,18 @@
   background-color: $primary-color;
   position: fixed;
   width: 100%;
-  height: 2rem;
   top: 0;
   left: 0;
 
   &__content {
     width: 100%;
     margin: 0 2rem;
+
+    @include mixins.lg {
+      margin: 1rem 2rem;
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__menu {
@@ -27,10 +32,21 @@
 
   &__menu_item_list {
     list-style-type: none;
+
+    @include mixins.lg {
+      display: flex;
+      flex-direction: row;
+      padding: 0 2rem;
+
+      & > li {
+        padding: 0 2rem;
+      }
+    }
   }
 
   &__menu_item {
     color: black;
+    font-size: 1rem;
     text-decoration: none;
   }
 
