@@ -10,15 +10,14 @@
   left: 0;
 
   &__content {
+    width: 100%;
     margin: 0 2rem;
-  }
-
-  &__header {
-
   }
 
   &__menu {
     display: none;
+    background-color: $primary-color;
+    padding: 1rem 1rem;
 
     @include mixins.lg {
       display: flex;
@@ -27,16 +26,28 @@
   }
 
   &__menu_item_list {
+    list-style-type: none;
   }
 
   &__menu_item {
+    color: black;
+    text-decoration: none;
   }
 
   &__toggle:checked ~ .nav__menu {
     display: block; 
   }
 
+  &__icon {
+    display: none;
+
+    @include mixins.lg {
+      display: block;
+    }
+  }
+
   &__toggle {
+
     @include mixins.lg {
       display: none;
     }

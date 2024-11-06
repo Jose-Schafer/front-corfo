@@ -24,7 +24,7 @@ module.exports = {
       template: 'src/index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'equipo.html',
+      filename: 'equipo_medico.html',
       template: 'src/equipo_medico.html'
     }),
     new HtmlWebpackPlugin({
