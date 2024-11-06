@@ -1,24 +1,10 @@
-@use "abstracts/variables" as *;
-
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
-
-// Import all of Bootstrap's CSS
-@use "bootstrap/scss/bootstrap";
+@import "abstracts/variables";
 
 // Import internal SCSS
-@use "base/body";
-//@use "base/mixins";
-//@use "base/typography";
+@import "base/body";
+@import "base/typography";
 
-// Layouts
-//@use "layout/navbar";
-//@use "layout/wrappers";
+// Import all of Bootstrap's CSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Components
-//@use "components/card";
-//@use "components/footer";
-//@use "components/form";
-//@use "components/location";
 
