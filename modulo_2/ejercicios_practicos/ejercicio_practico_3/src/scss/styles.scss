@@ -8,7 +8,7 @@ $prefix: "mo-";
 @use "bootstrap/scss/bootstrap";
 
 // Import internal SCSS
-//@use "base/body";
+@use "base/body";
 //@use "base/mixins";
 //@use "base/typography";
 
