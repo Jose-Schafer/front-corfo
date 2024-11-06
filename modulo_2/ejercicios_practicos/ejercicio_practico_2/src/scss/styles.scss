@@ -7,7 +7,12 @@
 @use "base/body";
 @use "base/mixins";
 @use "base/typography";
+
+// Layouts
 @use "layout/navbar";
-@use "components/card";
 @use "layout/wrappers";
+
+// Components
+@use "components/card";
+@use "components/footer";
 
