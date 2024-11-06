@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+.card {
+  background-color: $card-color;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 1rem;
+
+  &__title {
+    color: blue;
+    font-size: 0.75rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  &__description {
+    font-size: 0.5rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  &__img--top{ 
+    width: 100%;
+  }
+}
